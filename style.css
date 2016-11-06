@@ -428,6 +428,7 @@ pre {
   border-radius: 4px;
   color: #fff;
   padding: .75em 1em;
+  overflow-x: auto;
 }
 
 /* map */
