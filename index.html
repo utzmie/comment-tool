@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>コメント支援ツール（自分用Chrome拡張）</title>
+	<meta property="og:title" content="コメント支援ツール（自分用Chrome拡張）">
+	<meta property="og:type" content="article">
+	<meta property="og:image" content="https://utzmie.github.io/comment-tool/icon128.png">
+	<meta property="og:url" content="https://utzmie.github.io/comment-tool/">
+	<meta property="og:description" content="某コミュ向け。デベロッパーモードのみの公開。">
+	<meta property="og:site_name" content="utzmie">
+	<meta property="og:locale" content="ja_JP">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:image" content="https://utzmie.github.io/comment-tool/icon128.png">
+	<meta name="twitter:title" content="コメント支援ツール（自分用Chrome拡張）">
+	<meta name="twitter:description" content="某コミュ向け。デベロッパーモードのみの公開。">
+	<link rel="stylesheet" href="./style.css">
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-WKMH9W');</script>
+	<!-- End Google Tag Manager -->
+</head>
+<body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WKMH9W"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<div class="l-container">
+		<header class="l-header">
+			<p class="l-header__logo">utzmie（実験場）</p>
+		</header>
+		<main class="l-body">
+			<article>
+				<h1>コメント支援ツール（自分用Chrome拡張）</h1>
+
+				<div id="contents">
+					<p>毎回打つのがだるいコメントをボタンからいけるようにしたい。</p>
+					<p><strong>Google Chrome拡張機能です。その他のブラウザでは動作しません。</strong></p>
+					<p><img style="border: 1px solid #999;" src="screenshot.jpg" alt=""></p>
+
+					<section>
+						<h2>機能</h2>
+						<ul>
+							<li>ボタンを押すとそのテキストがクリップボードにコピーされる。</li>
+							<li>あとはコメント欄にペーストするだけ。</li>
+							<li><strong>本当はボタンから直接コメント投稿をしたいが調査中。</strong></li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>インストール</h2>
+						<p>今回はChromeウェブストアにアップしていないので、Zipでダウンロードしてデベロッパーモードで使用します。（＝自分でボタンを増やせます）</p>
+
+						<h3>ダウンロード</h3>
+						<ul>
+							<li><a href="https://github.com/utzmie/comment-tool/releases" target="_blank">リンク先でZipをダウンロード</a></li>
+							<li>ダウンロード後は好きな場所に置いてください。<br>
+							（後で位置を変えたりフォルダ名を変更すると、読み込み直す必要があります。）</li>
+						</ul>
+
+						<h3>Chromeの「設定」&gt;「拡張機能」</h3>
+						<p>デベロッパーモードをONにし、「パッケージ化されていない拡張機能を読み込む」。</p>
+						<p>ファイルの選択モードになったら、一式の入ったフォルダを選ぶ。例のアイコンが出たらOK。</p>
+						<p><img style="border: 1px solid #999;" src="screenshot2.jpg" alt=""></p>
+						<p><img style="border: 1px solid #999;" src="screenshot3.png" alt=""></p>
+						<p><img style="border: 1px solid #999;" src="screenshot4.png" alt=""></p>
+					</section>
+
+					<section>
+						<h2>カスタマイズ（ボタンを増やす）</h2>
+						<p><code>button-tab.html</code>を開くと行ごとにボタンが記述されている。<br>
+						これをコピーしたりテキストを変えたりすればOK。</p>
+						<p>自分がよくリクする動画のIDを登録するのもいいかも。</p>
+<pre><code>&lt;li&gt;&lt;button&gt;勝ちに行かない***は見たくないからね&lt;/button&gt;&lt;/li&gt;
+&lt;li&gt;&lt;button&gt;かっこいい！&lt;/button&gt;&lt;/li&gt;</code></pre>
+						<p>編集後は拡張機能のリロード＆ブラウザのリロードをしないと変更が反映されない。</p>
+						<p><img style="border: 1px solid #999;" src="screenshot5.png" alt=""></p>
+					</section>
+
+
+
+				</div><!-- #contents -->
+
+			</article>
+		</main>
+		<footer role="contentinfo" class="l-footer">
+			<div class="l-footer__author">
+				<ul>
+					<li><a href="/">HOME</a></li>
+				</ul>
+			</div>
+		</footer>
+	</div><!-- /container -->
+</body>
+</html>
