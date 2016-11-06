@@ -85,10 +85,15 @@
 }
 
 /* hide form */
-#kyouore-copyform input {
+#kyouore-copyform {
+	position: absolute;
 	width: 0;
 	height: 0;
-	top: 0;
+	top: 100%;
 	left: 0;
 	opacity: 0;
+}
+#kyouore-copyform input {
+	width: 1px;
+	height: 1px;
 }
